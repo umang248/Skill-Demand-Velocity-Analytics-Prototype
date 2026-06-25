@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS skills_extracted (
 );
 
 select * from skills_extracted
-select * from fact_job_skill_month
-select * from skill_velocity_monthly
-select * from focused_role_velocity
-select * from emerging_skills_final
+select * from fact_job_skill_month --created in build_warehouse.py
+select * from skill_velocity_monthly --created in calculate_velocity.py
+select * from focused_role_velocity --created in create_filtered_table.py
+select * from emerging_skills_final --detect_emerging_skills.py
